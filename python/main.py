@@ -1,7 +1,7 @@
-# import Hello as ho
+from Hello import Hello as ho
 
 def main():
-    # ho.Hello()
+    ho.Hello()
     Hello()
 
 def Hello():
