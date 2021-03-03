@@ -1,4 +1,8 @@
-# Hello_1st.py
+# File: Hello_1st.py
 
-if __name__ == "__main__":
-    print("Hello World from: " + __name__)
+# Erklæring af en konstant i Python:
+def BAUD():
+    return 9600
+
+print("Hello World")
+print(BAUD())
