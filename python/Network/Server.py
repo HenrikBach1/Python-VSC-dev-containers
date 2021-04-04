@@ -5,6 +5,7 @@
 #     Testing the code [with PuTTY]: https://techtutorialsx.com/2018/06/02/esp8266-arduino-socket-server/
 #     How to Expose Ports in Docker: https://www.whitesourcesoftware.com/free-developer-tools/blog/docker-expose-port/
 #     Forwarding or publishing a port [in Docker]: https://code.visualstudio.com/docs/remote/containers#_forwarding-or-publishing-a-port
+#     Remote debugging Python with VSCode: https://www.benoitpatra.com/2017/11/27/remote-debugging-python-with-vscode/
 import socket                                         
 
 # Create a socket object
