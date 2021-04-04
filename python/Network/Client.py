@@ -1,6 +1,8 @@
-#!/usr/bin/python3           # This is client.py file
+#!python3           # This is client.py file
 
 import socket
+
+print ("Client started...")
 
 # Globals
 port = 9999
@@ -10,6 +12,8 @@ s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 # Get local machine name
 host = socket.gethostname()
+
+print ("Connecting to {}:{}".format(host, port))
 
 # Connection to hostname on the port.
 s.connect((host, port))                               
