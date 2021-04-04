@@ -1,9 +1,10 @@
 #!/usr/bin/python3           # This is server.py file
 
 # Inspired from:
-#     https://www.tutorialspoint.com/python3/python_networking.htm
-#     https://techtutorialsx.com/2018/06/02/esp8266-arduino-socket-server/
-#     https://www.whitesourcesoftware.com/free-developer-tools/blog/docker-expose-port/
+#     A Simple Server: https://www.tutorialspoint.com/python3/python_networking.htm
+#     Testing the code [with PuTTY]: https://techtutorialsx.com/2018/06/02/esp8266-arduino-socket-server/
+#     How to Expose Ports in Docker: https://www.whitesourcesoftware.com/free-developer-tools/blog/docker-expose-port/
+#     Forwarding or publishing a port [in Docker]: https://code.visualstudio.com/docs/remote/containers#_forwarding-or-publishing-a-port
 import socket                                         
 
 # Create a socket object
