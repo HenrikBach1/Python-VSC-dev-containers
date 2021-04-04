@@ -15,19 +15,19 @@ serversocket = \
       )
 
 # Get local machine name
-host = socket.gethostname()                           
+host = socket.gethostname()
 
-port = 9999                                           
+port = 9999
 
 # Bind to the port
-serversocket.bind((host, port))                                  
+serversocket.bind((host, port))
 
 # Create a buffer queue up to 5 requests
-serversocket.listen(5)                                           
+serversocket.listen(5)
 
 while True:
    # Establish a connection
-   clientsocket,addr = serversocket.accept()      
+   clientsocket,addr = serversocket.accept()
 
    print("Got a connection from %s" % str(addr))
     
