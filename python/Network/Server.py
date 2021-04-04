@@ -22,7 +22,7 @@ port = 9999
 # Bind to the port
 serversocket.bind((host, port))
 
-# Create a buffer queue up to 5 requests
+# Create a buffer to queue up to 5 requests
 serversocket.listen(5)
 
 while True:
