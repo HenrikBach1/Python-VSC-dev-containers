@@ -1,4 +1,4 @@
-#!python3           # This is client.py file
+#!/usr/bin/env python3
 
 import socket
 

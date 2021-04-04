@@ -1,4 +1,4 @@
-#!/usr/bin/python3           # This is server.py file
+#!/usr/bin/env python3
 
 # Inspired from:
 #     A Simple Server: https://www.tutorialspoint.com/python3/python_networking.htm
@@ -8,6 +8,8 @@
 #     VS Code with Python in Docker - Quickstart: https://dev.to/siaarzh/vs-code-with-python-in-docker-quickstart-3ph4#:~:text=Say%20you%20started%20your%20server%20with%20python%20manage.py,%22port%22%20and%20select%20%22Remote-Containers%3A%20Forward%20Port%20from%20Container...%22.
 #     Remote debugging Python with VSCode: https://www.benoitpatra.com/2017/11/27/remote-debugging-python-with-vscode/
 #     Port forwarding issue in Containers - #1009: https://github.com/microsoft/vscode-remote-release/issues/1009
+#     [Universal shebang for Python3]: https://stackoverflow.com/questions/6908143/should-i-put-shebang-in-python-scripts-and-what-form-should-it-take
+
 import socket                                         
 
 # Globals
