@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# Run in shell or terminal:
+# Run in shell or terminal to make this file executable:
 #     chmod a+x ./Server.py
 
 # Inspired from:
