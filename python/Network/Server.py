@@ -6,26 +6,26 @@
 #     https://www.whitesourcesoftware.com/free-developer-tools/blog/docker-expose-port/
 import socket                                         
 
-# create a socket object
+# Create a socket object
 serversocket = \
    socket.socket(
       socket.AF_INET       # Address Family: Internet Protocol v4
       ,socket.SOCK_STREAM  # TCP protocol
       )
 
-# get local machine name
+# Get local machine name
 host = socket.gethostname()                           
 
 port = 9999                                           
 
-# bind to the port
+# Bind to the port
 serversocket.bind((host, port))                                  
 
 # Create a buffer queue up to 5 requests
 serversocket.listen(5)                                           
 
 while True:
-   # establish a connection
+   # Establish a connection
    clientsocket,addr = serversocket.accept()      
 
    print("Got a connection from %s" % str(addr))
