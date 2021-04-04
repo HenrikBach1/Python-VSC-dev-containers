@@ -9,6 +9,9 @@
 #     Remote debugging Python with VSCode: https://www.benoitpatra.com/2017/11/27/remote-debugging-python-with-vscode/
 import socket                                         
 
+# Globals
+port = 9999
+
 # Create a socket object
 serversocket = \
    socket.socket(
@@ -18,8 +21,6 @@ serversocket = \
 
 # Get local machine name
 host = socket.gethostname()
-
-port = 9999
 
 # Bind to the port
 serversocket.bind((host, port))
