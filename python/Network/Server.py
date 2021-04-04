@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 
+# Run in shell or terminal:
+#     chmod a+x ./Server.py
+
 # Inspired from:
 #     A Simple Server: https://www.tutorialspoint.com/python3/python_networking.htm
 #     Testing the code [with PuTTY]: https://techtutorialsx.com/2018/06/02/esp8266-arduino-socket-server/

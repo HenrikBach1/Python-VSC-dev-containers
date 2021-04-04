@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 
+# Run in shell or terminal:
+#     chmod a+x ./Client.py
+
 import socket
 
 print ("Client started...")
