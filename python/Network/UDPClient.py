@@ -1,3 +1,6 @@
+# Inspired from:
+#     Computer Networking - A Top-Down Approach, p. 187+
+
 port = 9999
 BUFFER_SIZE = 1024
 
