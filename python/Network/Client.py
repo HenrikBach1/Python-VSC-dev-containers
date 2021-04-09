@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 
-# Run in shell or terminal to make this file executable:
+# Globals
+port = 9999
+
+# To make this file executable, run below:
 #     chmod a+x ./Client.py
 
 import socket
 
 print ("Client started...")
-
-# Globals
-port = 9999
 
 # Create a socket object
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
