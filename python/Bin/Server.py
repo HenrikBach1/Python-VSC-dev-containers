@@ -32,6 +32,7 @@ serversocket.bind((host, port))
 
 # Create a buffer to queue up to 5 requests
 serversocket.listen(5)
+print("Listening...")
 
 while True:
    # Establish a connection
