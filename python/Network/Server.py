@@ -47,7 +47,7 @@ while True:
    print("Got a connection from %s" % str(addr))   
    print("Reading input...")
    cmd = clientsocket.recv(BUFFER_SIZE)
-   print("Read iput: '{}'".format(cmd))
+   print("Read input: '{}'".format(cmd))
 
    # Jarvis code: <--
    msg = jarvis(cmd)
