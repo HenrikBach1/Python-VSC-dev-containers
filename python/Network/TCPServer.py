@@ -34,8 +34,11 @@ while True:
             dec_data = data.decode('utf-8')
             print("Data received: '{}'".format(dec_data))
             if dec_data:
-                print('Echoing data to the client...')
-                clientSocket.sendall(data)
+                # <-- Jarvis code:
+                print('Sending data to the client...')
+                enc_data = dec_data.encode()
+                # Jarvis code: -->
+                clientSocket.sendall(enc_data)
             else:
                 print("No more data from client: '{}'.".format(client_address))
                 break
