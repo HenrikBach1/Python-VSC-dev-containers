@@ -9,17 +9,20 @@ import socket
 # Get local machine name
 host = socket.gethostname()
 
-clientsocket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+# Create a socket object
+clientSocket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
-# Communicate with Jarvis: <--
+print ("Connecting to {}:{}".format(host, port))
+
+# <-- Communicate with Jarvis:
 # Send command
 jarvisCmd = "Hello"
-clientsocket.sendto(jarvisCmd.encode(), (host,port))
+clientSocket.sendto(jarvisCmd.encode(), (host, port))
 
 # Receive answer
-(jarvisMsg, serverAddr) = clientsocket.recvfrom(BUFFER_SIZE)
+(jarvisMsg, serverAddr) = clientSocket.recvfrom(BUFFER_SIZE)
 print("Received message: {}".format(jarvisMsg.decode()))
 # Communicate with Jarvis: -->
 
 # Close socket
-clientsocket.close()
+clientSocket.close()

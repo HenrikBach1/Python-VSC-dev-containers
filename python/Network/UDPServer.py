@@ -6,19 +6,22 @@ BUFFER_SIZE = 1024
 
 import socket
 
+# Create a socket object
 serversocket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 # Get local machine name
 host = socket.gethostname()
 
+# Get local machine name
 serversocket.bind((host, port))
-print("Ready to receive...")
+print("Listening...")
+
 while True:
-    (cmd, clientAddr) = serversocket.recvfrom(BUFFER_SIZE)
-    jarvisCmd = cmd.decode()
+    (msg, clientAddr) = serversocket.recvfrom(BUFFER_SIZE)
+    jarvisCmd = msg.decode()
     print("Got a connection from '{}' with command '{}'".format(clientAddr, jarvisCmd))
 
-    # Jarvis code: <--
+    # <-- Jarvis code:
     jarvisMsg = jarvisCmd.upper()
     # Jarvis code: -->
 
