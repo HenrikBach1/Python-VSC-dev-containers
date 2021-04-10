@@ -12,7 +12,7 @@ serversocket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 # Get local machine name
 host = socket.gethostname()
 
-# Get local machine name
+# Bind
 serversocket.bind((host, port))
 print("Listening...")
 
