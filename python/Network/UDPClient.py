@@ -1,7 +1,7 @@
 # Inspired from:
 #     Computer Networking - A Top-Down Approach, p. 187+
 
-port = 9999
+port = 6666
 BUFFER_SIZE = 1024
 
 import socket

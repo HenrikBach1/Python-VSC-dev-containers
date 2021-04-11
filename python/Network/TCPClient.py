@@ -2,7 +2,7 @@
 #     https://python-forum.io/Thread-BrokenPipeError-Errno-32-Broken-pipe
 
 # Globals
-port = 9999
+port = 6666
 
 # Echo client program
 import socket
