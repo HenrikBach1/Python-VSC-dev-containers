@@ -21,7 +21,7 @@ clientSocket.sendto(jarvisCmd.encode(), (host, port))
 
 # Receive answer
 (jarvisMsg, serverAddr) = clientSocket.recvfrom(BUFFER_SIZE)
-print("Received message: {}".format(jarvisMsg.decode()))
+print("Received message: '{}'".format(jarvisMsg.decode()))
 # Communicate with Jarvis: -->
 
 # Close socket
