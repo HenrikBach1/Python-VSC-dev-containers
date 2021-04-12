@@ -22,7 +22,7 @@ try:
     # Send data
     message = ('This is the message.  It will be repeated.')
     enc_mes = message.encode('utf-8')
-    print("Sending '{}'".format(message))
+    print("Sending: '{}'".format(message))
     sock.sendall(enc_mes)
  
     # Look for the response
@@ -34,7 +34,7 @@ try:
         data = sock.recv(chunk)
         amount_received += len(data)
         dec_data = data.decode('utf-8')
-        print("Received {}".format(dec_data))
+        print("Received: '{}'".format(dec_data))
  
 finally:
     sock.close()

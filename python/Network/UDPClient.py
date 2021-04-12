@@ -17,6 +17,7 @@ print ("Connecting to {}:{}".format(host, port))
 # <-- Communicate with Jarvis:
 # Send command
 jarvisCmd = "Hello"
+print("Sending: '{}'".format(jarvisCmd))
 clientSocket.sendto(jarvisCmd.encode(), (host, port))
 
 # Receive answer
